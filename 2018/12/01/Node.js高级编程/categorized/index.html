@@ -18,19 +18,19 @@
   
   
   <title>Vision&#39;s Blog</title>
-  <meta name="description" content="使用GitHub和Hexo搭建个人博客     1. 安装Git       2. 安装Node.js       3. 进入GitHub，注册登录。          以上步骤没什么难点，而且网上教程很多，不做介绍。     接下来进入重点：  GitHub相关操作  1. 找到New repository按钮，点击。  2. Repository name必须命名为：账户名.github.io">
+  <meta name="description" content="Node.js高级编程 第12章 构建TCP客户端 使用net模块连接TCP服务器：  var net = require(&apos;net&apos;); var port = 4000; var conn = net.createConnection(port);    createConnection有三个参数，第二个表示想要连接的主机名（在缺省该参数的情况下，主机名默认为“localhost”。第三个参数为">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Vision">
-<meta property="og:url" content="http://yoursite.com/2018/11/07/使用GitHub和Hexo搭建个人博客/categorized/index.html">
+<meta property="og:url" content="http://yoursite.com/2018/12/01/Node.js高级编程/categorized/index.html">
 <meta property="og:site_name" content="Vision">
-<meta property="og:description" content="使用GitHub和Hexo搭建个人博客     1. 安装Git       2. 安装Node.js       3. 进入GitHub，注册登录。          以上步骤没什么难点，而且网上教程很多，不做介绍。     接下来进入重点：  GitHub相关操作  1. 找到New repository按钮，点击。  2. Repository name必须命名为：账户名.github.io">
+<meta property="og:description" content="Node.js高级编程 第12章 构建TCP客户端 使用net模块连接TCP服务器：  var net = require(&apos;net&apos;); var port = 4000; var conn = net.createConnection(port);    createConnection有三个参数，第二个表示想要连接的主机名（在缺省该参数的情况下，主机名默认为“localhost”。第三个参数为">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-12-09T09:59:02.262Z">
+<meta property="og:updated_time" content="2018-12-09T09:59:02.282Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Vision">
-<meta name="twitter:description" content="使用GitHub和Hexo搭建个人博客     1. 安装Git       2. 安装Node.js       3. 进入GitHub，注册登录。          以上步骤没什么难点，而且网上教程很多，不做介绍。     接下来进入重点：  GitHub相关操作  1. 找到New repository按钮，点击。  2. Repository name必须命名为：账户名.github.io">
+<meta name="twitter:description" content="Node.js高级编程 第12章 构建TCP客户端 使用net模块连接TCP服务器：  var net = require(&apos;net&apos;); var port = 4000; var conn = net.createConnection(port);    createConnection有三个参数，第二个表示想要连接的主机名（在缺省该参数的情况下，主机名默认为“localhost”。第三个参数为">
   <!-- Canonical links -->
-  <link rel="canonical" href="http://yoursite.com/2018/11/07/使用GitHub和Hexo搭建个人博客/categorized/index.html">
+  <link rel="canonical" href="http://yoursite.com/2018/12/01/Node.js高级编程/categorized/index.html">
   
     <link rel="alternate" href="/atom.xml" title="Vision" type="application/atom+xml">
   
@@ -356,15 +356,15 @@
   
 <main class="main" role="main">
   <div class="content">
-  <article id="post-使用GitHub和Hexo搭建个人博客" class="article article-type-post" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <article id="post-Node.js高级编程" class="article article-type-post" itemscope="" itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
       
       <div class="article-meta">
         <span class="article-date">
     <i class="icon icon-calendar-check"></i>
-	<a href="/2018/11/07/使用GitHub和Hexo搭建个人博客/categorized/" class="article-date">
-	  <time datetime="2018-11-07T01:08:10.569Z" itemprop="datePublished">2018-11-07</time>
+	<a href="/2018/12/01/Node.js高级编程/categorized/" class="article-date">
+	  <time datetime="2018-12-01T13:38:27.491Z" itemprop="datePublished">2018-12-01</time>
 	</a>
 </span>
         
@@ -372,59 +372,217 @@
 
         
 
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2018/11/07/使用GitHub和Hexo搭建个人博客/categorized/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2018/12/01/Node.js高级编程/categorized/#comments" class="article-comment-link">Comments</a></span>
         
       </div>
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
       
-        <h1 id="使用GitHub和Hexo搭建个人博客"><a href="#使用GitHub和Hexo搭建个人博客" class="headerlink" title="使用GitHub和Hexo搭建个人博客"></a>使用GitHub和Hexo搭建个人博客</h1><hr>
-<ol>
-<li>安装Git<br></li>
-<li>安装Node.js<br></li>
-<li>进入<a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>，注册登录。<br><br>以上步骤没什么难点，而且网上教程很多，不做介绍。</li>
-</ol>
-<hr>
-<p>接下来进入重点：</p>
-<h2 id="GitHub相关操作"><a href="#GitHub相关操作" class="headerlink" title="GitHub相关操作"></a>GitHub相关操作</h2><ol>
-<li>找到New repository按钮，点击。</li>
-<li>Repository name必须命名为：<strong>账户名.github.io</strong>（其他不行），并且<strong>勾选</strong>Initialize this repository with a README。完成创建。</li>
-</ol>
-<hr>
-<h2 id="Git相关操作"><a href="#Git相关操作" class="headerlink" title="Git相关操作"></a>Git相关操作</h2><ol>
-<li>输入cd ~/.ssh检查.ssh的文件夹</li>
-<li>输入ssh -keygen -t rsa -C “your e-mail”回车,回车，输入y,回车,完成ssh key的创建。</li>
-<li>找到id_rsa.pub文件，将内容复制，在GitHub的settings，选择SSH and GPG keys，点击new SSH key，将内容粘贴提交。</li>
-<li>在Git内先cd ~/.ssh，然后输入ssh -T <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>，如果看到Hi后面是你的用户名，就说明成功了。</li>
-</ol>
-<hr>
-<h2 id="Hexo相关操作"><a href="#Hexo相关操作" class="headerlink" title="Hexo相关操作"></a>Hexo相关操作</h2><ol>
-<li>在我的电脑，任选磁盘内建立一个文件夹，如Blog文件夹,在文件夹内右键，选择Get Base Here，进入Git界面。</li>
-<li>输入npm install -g hexo-cli，安装Hexo。输入hexo -v，检查是否安装成功。</li>
-<li>输入hexo init，初始化文件夹，结尾显示Start blogging with Hexo则成功。</li>
-<li>输入npm install，安装所需要的组件。<br>完成后，指定文件夹下会有目录。</li>
-<li>新建文章，输入 hexo nwe “Hello World”</li>
-<li>输入hexo g d，生成并部署</li>
-<li>可选（输入hexo server，然后在浏览器输入<a href="http://localhost:4000可以查看网站。这个只是在本地访问）。" target="_blank" rel="noopener">http://localhost:4000可以查看网站。这个只是在本地访问）。</a></li>
-<li><p>在文件夹中找到_config.yml文件，打开，在底部找到</p>
-<pre><code>Deployment 
-Docs: https://hexo.io/docs/deployment.html
-deploy:
-</code></pre><p>在下面添加代码，格式如下：</p>
-<pre><code>type: git
-repo: git@github.com:Vi/Vi.github.io.git(这个设置为自己的SSH)
-branch: master
-</code></pre><p><strong>注意：冒号后面加空格</strong></p>
-</li>
-<li><p>在Git内输入hexo g d，更新即可。</p>
-</li>
-</ol>
-<hr>
-<h2 id="如何更新文章："><a href="#如何更新文章：" class="headerlink" title="如何更新文章："></a>如何更新文章：</h2><ol>
-<li>将md文件添加到\source_posts文件夹内。</li>
-<li>在/hexo内右键打开Git，输入hexo clean，回车，输入hexo g d。</li>
-</ol>
+        <h1 id="Node-js高级编程"><a href="#Node-js高级编程" class="headerlink" title="Node.js高级编程"></a>Node.js高级编程</h1><h2 id="第12章-构建TCP客户端"><a href="#第12章-构建TCP客户端" class="headerlink" title="第12章 构建TCP客户端"></a>第12章 构建TCP客户端</h2><p>使用net模块连接TCP服务器：</p>
+<pre><code>var net = require(&apos;net&apos;);
+var port = 4000;
+var conn = net.createConnection(port); 
+</code></pre><p>createConnection有三个参数，第二个表示想要连接的主机名（在缺省该参数的情况下，主机名默认为“localhost”。第三个参数为回调函数。</p>
+<pre><code>function connectionListener(){
+    console.log();
+}
+var conn = net.createConnection(port,host,connectionListener);
+</code></pre><p>发送数据：</p>
+<pre><code>1.conn.write(&apos;here is a starting for you&apos;）;
+2.conn.write(&apos;SGBabjHndonNL&apos;,&apos;base64&apos;);
+3.var buffer = new Buffer(&apos;hello world&apos;);
+conn.write(buffer);
+4.conn.write(&apos;hey&apos;,function(){
+    console.log();
+});
+</code></pre><p><strong>注意：</strong></p>
+<blockquote>
+<p>当终止连接时，实际上是将该操作放入队列中，这意味着连接不会立刻被关闭。同样，当连接收到“ended”通知时，会发送一个FIN数据包，这意味着服务器仍旧可以发送部分数据。<br><br>基于以上两点原因，在终止连接之后，依然可以接收”data”事件。</p>
+</blockquote>
+<p>处理错误：监听‘error’，err.message和err.code。<br><br>process.stdin可读流接受用户的键盘输入<br><br>process.stdin.resume()可读流初始化时处于暂停状态，恢复它才会发射‘data’事件，调用此方法恢复。<br><br>process.stdin.pipe(conn)将可读流一体化。<br>防止进程的标准输出流在连接关闭之后关闭，使用一下代码：</p>
+<pre><code>conn.pipe(process.stdout,{end: false});
+</code></pre><p>在控制台输入‘quit’断开连接</p>
+<pre><code>process.stdin.on(&apos;data&apos;,function(data){
+    if(data.toString().trim().toLowerCase() === &apos;quit&apos;){
+        conn.end();
+        process.stdin.pause();
+    }
+});
+</code></pre><p>当然，为了防止重新连接，加一个变量来说明用户是否想退出。如：var quitting = false;退出连接设为true。</p>
+<h2 id="第13章-创建HTTP请求"><a href="#第13章-创建HTTP请求" class="headerlink" title="第13章 创建HTTP请求"></a>第13章 创建HTTP请求</h2><pre><code>var http = require(&apos;http&apos;);
+var options = {
+    host: &quot;www.google.com&quot;,
+    port: 80,
+    path: &quot;/index.html&quot;
+};
+http.get(options,function(res){
+    console.log(res.statusCode);
+});
+</code></pre><h2 id="第14章-使用用户数据报"><a href="#第14章-使用用户数据报" class="headerlink" title="第14章 使用用户数据报"></a>第14章 使用用户数据报</h2><p>使用dgram模块来支持数据报。</p>
+<pre><code>var dgram = require(&apos;dgram&apos;);
+var server = dgram.createSocket(&apos;udp4&apos;);//或者是&apos;udp6&apos;
+</code></pre><p><strong>注意：</strong>UDP中不存在真正的服务器，它只是在套接字上监听消息的终端，服务器一般要对收到的消息提供某种类型的反馈。</p>
+<p>一个简单的UDP服务器：</p>
+<pre><code>var dgram = require(&apos;dgram&apos;);
+var server = dgram.createSocket(&apos;udp4&apos;);//或者是&apos;udp6&apos;
+server.on(&apos;message&apos;,function(message){
+    console.log(&apos;server got message:&apos;+message);
+});
+var port = 4000;
 
+server.on(&apos;listening&apos;,function(){
+var address = server.address();
+    console.log(&apos;server listening on:&apos;+address.address);
+});
+server.bind(port);
+</code></pre><p>查看附加的消息信息：</p>
+<pre><code>server.on(&apos;message&apos;,function(message,rinfo){
+    console.log(&apos;server got message: %s from %s:%d&apos;,
+    message,
+    rinfo.address,
+    rinfo.port);
+});
+</code></pre><p>向发送端发回消息</p>
+<pre><code>server.on(&apos;message&apos;,function(message,rinfo){
+    server.send(message,
+        0,//消息的初始偏移
+        message.length,//消息长度
+        rinfo.port,
+        rinfo.address);
+});
+</code></pre><p>构建数据报客户端：</p>
+<pre><code>var dgram = require(&apos;dgram&apos;);
+var client = dgram.createSocket(&apos;udp4&apos;);
+var message = new Buffer(&apos;this is a message&apos;);
+client.send(message,0,message.length,4000,&apos;localhost&apos;,function(err,bytes){
+    if(err){throw err;}
+    client.close();
+});//err错误对象，bytes发送的字节数
+client.on(&apos;message&apos;,function(message){
+    console.log(&apos;Got message back:&apos;+message.toString());
+});//接收服务器返回的值
+</code></pre><p>server.addMemberShip(‘230.1.2.3’);接收来自地址230.1.2.3的多播消息。</p>
+<p>client.setMulticastTTL(10);设置存活时间为10，TTL（time to live）通知网络数据报在被抛弃之前可以经过多少周转，每经过一次周转，存活时间计数器就递减1，当为0时，数据报就会被抛弃。</p>
+<h2 id="第15章-用TLS-SSL保证服务器的安全性"><a href="#第15章-用TLS-SSL保证服务器的安全性" class="headerlink" title="第15章 用TLS/SSL保证服务器的安全性"></a>第15章 用TLS/SSL保证服务器的安全性</h2><p>传输层安全（Transport Layer Security）和安全套接字层（Secure Socket Layer）允许客户端/服务器应用程序以阻止（其他人看到你的消息）和篡改（别人修改你的消息）的方式通过网络进行通信。TLS/SSL会在传输层上对网络连接进行加密，这使得隐私和消息都能得到验证。</p>
+<p>创建TLS服务器证书：</p>
+<blockquote>
+<p>创建一个项目目录chat_server,并将密钥和证书放入其中，首先创建服务器密钥：<br><br>$ openssl genrsa -out server_key.pem 1024<br><br>然后创建证书请求：<br><br>$ openssl req -new -key server_key.pem -out server_csr.pem<br><br>为了用CSR创建自签名的证书，可以这样做：<br><br>openssl x509 -req -in server_csr.pem -signkey server_key.pem \ -out server_cert.pem</p>
+</blockquote>
+<p>创建TLS客户端证书：</p>
+<blockquote>
+<p>创建客户端密钥和证书：<br><br>$ openssl genrsa -out client_key.pem 1024<br><br>$ openssl req -new -key client_key.pem -out client_csr.pem<br><br>openssl x509 -req -in client_csr.pem -signkey client_key.pem -out client_cert.pem</p>
+</blockquote>
+<p>构建TLS服务器</p>
+<pre><code>var tls = require(&apos;tls&apos;);
+var fs = require(&apos;fs&apos;);
+var serverOptions = {
+    key:fs.readFileSync(&apos;./server_key.pem&apos;),
+    cert:fs.readFileSync(&apos;./server_cert.pem&apos;)，
+    requestCert:true，
+    rejectUnauthorized:true
+};
+var server = tls.createServer(serverOptions);
+
+var port = 4000;
+server.listen(port);
+
+server.on(&apos;secureConnection&apos;,function(clientStream){
+    console.log(&apos;got a new connection&apos;);
+    clientStream.on(&apos;data&apos;,function(data){
+        console.log(&apos;got some data from the client:&apos;,data);
+        if(data.toString().trim().toLowerCase() === &apos;quit&apos;){//终止连接
+            clientStream.end(&apos;Bye Bye&apos;);
+        }
+    });
+});//从客户端读取数据
+
+server.on(&apos;secureConnection&apos;,function(clientStream){
+    clientStream.write(&apos;Hey Hello\n&apos;);
+});//向客户端发送数据、
+</code></pre><p>构建TLS客户端</p>
+<pre><code>var fs = require(&apos;fs&apos;);
+var options = {
+    key:fs.readFileSync(&apos;path/to/my/client_key.pem&apos;),
+    cert:fs.readFileSync(&apos;path/to/my/client_cert.pem&apos;)
+};
+
+//连接服务器
+var tls = require(&apos;tls&apos;);
+var host = &apos;localhost&apos;;
+var port = 4001;
+var client = tls.connect(port,host,options,function(){
+    console.log(&apos;connected&apos;);
+    if(!client.authorized){
+        console.log(&apos;client denied access:&apos;,client.authorizationError);
+    }else{
+        //...
+    }
+});
+
+//向服务器发送数据
+var client = tls.connect(port,host,options,function(){
+    client.write(&apos;Hey Hello&apos;);
+});
+
+//从服务器读取数据
+var client = tls.connect(port,host,options,function(){
+    client.on(&apos;data&apos;,function(data){
+        console.log(&apos;got some data from the server:&apos;,data);
+    });
+});
+
+//终止连接
+var client = tls.connect(port,host,options,function(){
+    client.end(&apos;Bye bye&apos;);
+});
+</code></pre><h2 id="第16章-用HTTPS保证HTTP服务器的安全性"><a href="#第16章-用HTTPS保证HTTP服务器的安全性" class="headerlink" title="第16章 用HTTPS保证HTTP服务器的安全性"></a>第16章 用HTTPS保证HTTP服务器的安全性</h2><h2 id="第22章-使用Socket-IO创建通用的实时Web应用程序"><a href="#第22章-使用Socket-IO创建通用的实时Web应用程序" class="headerlink" title="第22章 使用Socket.IO创建通用的实时Web应用程序"></a>第22章 使用Socket.IO创建通用的实时Web应用程序</h2><p>在服务器上安装和运行Socket.IO</p>
+<blockquote>
+<p>安装 $ npm install socket.io</p>
+</blockquote>
+<p>创建服务器</p>
+<pre><code>var io = require(&apos;socket.io&apos;).listen(4000);
+io.sockets.on(&apos;connection&apos;,function(socket){
+    socket.on(&apos;my event&apos;,function(content){
+        console.log(content);
+    });
+});
+</code></pre><p>广播机制：</p>
+<pre><code>io.sockets.on(&apos;connection&apos;,function(socket){
+    socket.on(&apos;clientMessage&apos;,function(content){
+        socket.emit(&apos;serverMessage&apos;,&apos;You said:&apos;+content);
+        socket.broadcast.emit(&apos;serverMessage&apos;,socket.id+&apos;said:&apos;+content);
+    });
+});
+</code></pre><h2 id="第23章-使用node-mysql连接MySQL数据库"><a href="#第23章-使用node-mysql连接MySQL数据库" class="headerlink" title="第23章 使用node-mysql连接MySQL数据库"></a>第23章 使用node-mysql连接MySQL数据库</h2><p>连接和查询MySQL数据库：</p>
+<blockquote>
+<p>$ npm install mysql</p>
+</blockquote>
+<pre><code>var mysql = require(&apos;mysql&apos;);
+
+var client = mysql.createClient({   
+    host: &apos;localhost&apos;,
+    user: &apos;root&apos;,
+    password: &apos;root&apos;
+});
+
+client.query(&apos;SELECT &quot;Hello, world!&quot;&apos;,function(err,results,fields){
+    console.log(results);
+    console.log(fields);
+    client.end();
+});
+</code></pre><p>创建数据库：</p>
+<pre><code>client.query(&apos;CREATE DATABASE node&apos;,function(err){
+    if(err){
+        client.end();
+        throw err;
+    }
+});
+</code></pre><p>插入数据：</p>
+<pre><code>client.query(&apos;USE node&apos;);
+var userInput = &apos;&quot;); DELETE FROM test WHERE id = 1; -- &apos;;
+client.query(&apos;INSERT INTO test (content) VALUES (?)&apos;,[userInput]);
+client.end();
+</code></pre>
       
     </div>
     <div class="article-footer">
@@ -433,7 +591,7 @@ branch: master
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="http://yoursite.com/2018/11/07/使用GitHub和Hexo搭建个人博客/categorized/" title="" target="_blank" rel="external">http://yoursite.com/2018/11/07/使用GitHub和Hexo搭建个人博客/categorized/</a>
+      <a href="http://yoursite.com/2018/12/01/Node.js高级编程/categorized/" title="" target="_blank" rel="external">http://yoursite.com/2018/12/01/Node.js高级编程/categorized/</a>
     </li>
     
     <li class="post-copyright-license">
@@ -480,9 +638,13 @@ branch: master
   <ul class="pager pull-left">
     
     <li class="prev">
-      <a href="/2018/11/07/计算机操作系统知识总结/软件工程/" title="计算机操作系统知识总结"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;Newer</span></a>
+      <a href="/2018/12/04/计算机组成原理/categorized/" title="(no title)"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;Newer</span></a>
     </li>
     
+    
+    <li class="next">
+      <a href="/2018/11/07/计算机操作系统知识总结/软件工程/" title="计算机操作系统知识总结"><span>Older&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+    </li>
     
     
   </ul>
